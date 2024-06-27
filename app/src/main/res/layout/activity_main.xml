@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/textview1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/textview2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:autofillHints="@string/textview1"
+                android:ems="10"
+                android:maxLength="3"
+                android:hint="@string/textview1"
+                android:inputType="number"
+                />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/textview3" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wiederstand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/wiederstand"
+                android:visibility="visible" />
+
+            <!-- RING 1 -->
+            <!--
+            <ImageView
+                android:id="@+id/v0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v0"
+                android:visibility="gone" />
+             -->
+            <ImageView
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v6"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v7"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v8"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/v9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/v9"
+                android:visibility="gone" />
+
+            <!-- RING 2 -->
+
+            <ImageView
+                android:id="@+id/w0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w0"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w6"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w7"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w8"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/w9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/w9"
+                android:visibility="gone" />
+
+            <!-- RING 3 -->
+            <ImageView
+                android:id="@+id/x0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x0"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x6"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x7"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x8"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/x9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/x9"
+                android:visibility="gone" />
+
+            <!-- RING 4 -->
+            <ImageView
+                android:id="@+id/y0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y0"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y6"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y7"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y8"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/y9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/y9"
+                android:visibility="gone" />
+            <!-- RING 5 -->
+            <ImageView
+                android:id="@+id/z0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z0"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z6"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/z7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/z7"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxWidth="20dp"
+                android:singleLine="true"
+                android:text="@string/textview4"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxWidth="20dp"
+                android:singleLine="true"
+                android:text="@string/textview5"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxWidth="20dp"
+                android:singleLine="true"
+                android:text="@string/textview6"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxWidth="20dp"
+                android:singleLine="true"
+                android:text="@string/textview7"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:maxWidth="20dp"
+                android:singleLine="true"
+                android:text="@string/textview8"
+                android:textSize="16sp" />
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

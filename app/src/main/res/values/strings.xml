@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WRSD</string>
+    <string name="textview1">Wert des Wiederstand</string>
+    <string name="textview2">Einheiten</string>
+    <string name="textview3">Toleranz</string>
+    <string name="textview4">Ring 1</string>
+    <string name="textview5">Ring 2</string>
+    <string name="textview6">Ring 3</string>
+    <string name="textview7">Ring 4</string>
+    <string name="textview8">Ring 5</string>
+</resources>
